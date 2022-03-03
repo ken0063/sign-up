@@ -1,0 +1,33 @@
+@import url(../../var.scss);
+
+button {
+  outline: none;
+  font-family: var(--font);
+  border-radius: var(--rounded);
+  font-size: var(--fontSize);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  overflow-anchor: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+
+  &.purple {
+    padding: 22px 75px;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    -webkit-box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  &.green {
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    font-weight: var(--normal);
+    padding: 15px 45px;
+    -webkit-box-shadow: 0px 4px 0px 0px hsla(154, 59%, 40%, 0.85);
+    box-shadow: 0px 4px 0px 0px hsla(154, 59%, 40%, 0.85);
+  }
+}

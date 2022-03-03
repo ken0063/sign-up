@@ -1,0 +1,119 @@
+@import url(/src/var.scss);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background: url("../public/images/bg-intro-mobile.png"), var(--red);
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+  color: white;
+  font-size: var(--fontSize);
+  font-weight: var(--thin);
+  padding: 95px 0 75px 0;
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 22px;
+    text-align: center;
+    h1 {
+      font-weight: var(--bold);
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+
+    p {
+      width: 310px;
+      height: 120px;
+    }
+  }
+
+  .button-container {
+    margin: 22px;
+
+    p {
+      font-weight: var(--xthin);
+      span {
+        font-weight: var(--bold);
+      }
+    }
+  }
+
+  .input-container {
+    margin: 22px;
+    width: 77%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 23px;
+    border-radius: var(--rounded);
+
+    .input-wrapper {
+      margin-bottom: 15px;
+    }
+  }
+
+  .foot-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 5px 0;
+    line-height: 15px;
+    text-align: center;
+    color: var(--grayishBlue);
+    font-size: 10.5px;
+
+    p {
+      width: 230px;
+      span {
+        color: var(--red);
+        font-weight: var(--bold);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .App {
+    flex-direction: row;
+    height: 84.9vh;
+    background-size: contain;
+
+    .text-content {
+      justify-content: left;
+      align-items: left;
+      text-align: left;
+      margin-right: 80px;
+      width: 500px;
+      h1 {
+        font-size: 55px;
+      }
+      p {
+        width: 500px;
+        height: auto;
+      }
+    }
+
+    .side {
+      width: 32%;
+    }
+
+    .foot-note {
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
