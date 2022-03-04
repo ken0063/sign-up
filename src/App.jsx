@@ -75,9 +75,7 @@ function App() {
       <div className="side">
         <div className="button-container">
           <Button className="button purple">
-            <p>
-              <span>Try it free 7 days</span> days then $20/mo. thereafter
-            </p>
+            <span>Try it free 7 days</span> days then $20/mo. thereafter
           </Button>
         </div>
 
